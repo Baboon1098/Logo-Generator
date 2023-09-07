@@ -19,4 +19,9 @@ function createLogo(text, textColor, shape, shapeColor) {
         console.error('Invalid shape');
         process.exit(1);
     }
+        // Add text to the canvas
+        canvas.text(text).move(10, 50).fill(textColor);
+    
+        // Export the SVG to a file named 'logo.svg'
+        fs.writeFileSync('logo.svg', canvas.svg());
 }

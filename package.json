@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "inquirer": "^9.2.10",
     "svg.js": "^2.7.1"
   },
   "description": ""

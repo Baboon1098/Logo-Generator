@@ -1,6 +1,6 @@
+const inquirer = require("inquirer");
 const fs = require('fs');
 const { createSVG } = require('svg.js');
-const inquirer = require('inquirer');
 
 function createLogo(text, textColor, shape, shapeColor) {
     const canvas = createSVG(300, 200);
@@ -51,3 +51,13 @@ inquirer
             message: 'Enter shape color (e.g., "blue", "#ff9900"):',
         },
     ])
+    .then((answers) => {
+      const { userText, textColor, shape, shapeColor } = answers;
+
+      createLogo(userText, textColor, shape, shapeColor);
+
+      console.log('Generated logo.svg');
+  })
+  .catch((error) => {
+      console.error(error);
+  });

@@ -1,7 +1,6 @@
 {
   "name": "logo-generator",
   "version": "1.0.0",
-  "description": "",
   "main": "logo_generator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "svg.js": "^2.7.1"
-  }
+  },
+  "description": ""
 }

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { createSVG } = require('svg.js');
+const inquirer = require('inquirer');
 
 function createLogo(text, textColor, shape, shapeColor) {
     const canvas = createSVG(300, 200);
@@ -25,3 +26,28 @@ function createLogo(text, textColor, shape, shapeColor) {
         // Export the SVG to a file named 'logo.svg'
         fs.writeFileSync('logo.svg', canvas.svg());
 }
+
+inquirer
+    .prompt([
+        {
+            type: 'input',
+            name: 'userText',
+            message: 'Enter the text:',
+        },
+        {
+            type: 'input',
+            name: 'textColor',
+            message: 'Enter text color (e.g., "red", "#00ff00"):',
+        },
+        {
+            type: 'list',
+            name: 'shape',
+            message: 'Choose a shape:',
+            choices: ['circle', 'triangle', 'square'],
+        },
+        {
+            type: 'input',
+            name: 'shapeColor',
+            message: 'Enter shape color (e.g., "blue", "#ff9900"):',
+        },
+    ])

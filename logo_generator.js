@@ -1,7 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-// Function to generate the SVG file
 function generateSVG(text, textColor, shape, shapeColor) {
   let svgContent;
 
@@ -68,3 +67,5 @@ inquirer
   .catch((error) => {
     console.error(error);
   });
+
+  // test

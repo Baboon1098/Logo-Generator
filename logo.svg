@@ -1,6 +1,5 @@
 
-      <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="150" cy="100" r="50" fill="black" />
-        <text x="50%" y="50%" fill="white" text-anchor="middle">UGH</text>
-      </svg>
-    
+    <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="150,50 100,150 200,150" fill="Black" />
+      <text x="50%" y="50%" fill="Blue" text-anchor="middle">tst</text>
+    </svg>

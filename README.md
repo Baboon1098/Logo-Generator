@@ -6,6 +6,7 @@ This app allows users to make there own color for three shapes Circle, Square, a
 
 ## Preview 
 
+  Look at submission
 
 ## Features
 
